@@ -1,0 +1,91 @@
+(A) Statement object to get all employee records.
+
+package packages;
+
+import java.sql.*;
+
+public class P1A_JDK {
+
+    public static void main(String[] args) {
+
+        try {
+
+            String url = "jdbc:mysql://localhost:3306/employee";
+            String user = "root";
+            String password = "";
+
+            Connection con = DriverManager.getConnection(url, user, password);
+
+            Statement stmt = con.createStatement();
+
+            ResultSet rs = stmt.executeQuery("SELECT * FROM emp");
+
+            while (rs.next()) {
+                System.out.println(
+                        rs.getInt("Id") + " "
+                        + rs.getString("name") + " "
+                        + rs.getString("city") + " "
+                        + rs.getInt("age"));
+            }
+
+            rs.close();
+            stmt.close();
+            con.close();
+
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+
+(B) PreparedStatement object to insert a record of an employee.
+
+import java.sql.*;
+import java.util.Scanner;
+
+public class P1B_JDK {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        try {
+            String url = "jdbc:mysql://localhost:3306/employee";
+            String user = "root";
+            String password = "";
+            Connection con = DriverManager.getConnection(url, user, password);
+	
+            String sql = "INSERT INTO emp (id, name, city, age) VALUES (?, ?, ?, ?)";
+            PreparedStatement ps = con.prepareStatement(sql);
+
+            System.out.print("Enter Employee ID: ");
+            int id = sc.nextInt();
+            sc.nextLine(); // consume leftover newline
+
+            System.out.print("Enter Employee Name: ");
+            String name = sc.nextLine();
+
+            System.out.print("Enter City: ");
+            String city = sc.nextLine();
+
+            System.out.print("Enter Age: ");
+            int age = sc.nextInt();
+
+            ps.setInt(1, id);
+            ps.setString(2, name);
+            ps.setString(3, city);
+            ps.setInt(4, age);
+
+            int rows = ps.executeUpdate();
+            if (rows > 0) {
+                System.out.println("Record Inserted Successfully.");
+            } else {
+                System.out.println("Record Not Inserted.");
+            }
+
+            ps.close();
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sc.close();
+        }
+    }
+}
