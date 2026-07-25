@@ -1,0 +1,307 @@
+// 1. STUDENT REGISTRATION FORM //
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form action="welcome.html" method="get">
+
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="fullname" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+    <br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1">
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Preferences & Extras</legend>
+
+    <label>Upload Profile Picture:</label>
+    <input type="file" name="photo">
+    <br><br>
+
+    <label>Favorite Color:</label>
+    <input type="color" name="color">
+    <br><br>
+
+    <label>Search for Course:</label>
+    <input type="search" name="course">
+    <br><br>
+
+    <label>Course Interest:</label>
+    <input type="range" name="interest" min="0" max="100">
+    <br><br>
+
+    <label>Personal Website:</label>
+    <input type="url" name="website">
+    <br><br>
+
+    <label>Course Type:</label>
+    <select name="courseType">
+      <optgroup label="Engineering">
+        <option>CE</option>
+        <option>EE</option>
+        <option>ME</option>
+        <option>CIV</option>
+      </optgroup>
+
+      <optgroup label="Management">
+        <option>BBA</option>
+        <option>MBA</option>
+      </optgroup>
+    </select>
+
+    <br><br>
+
+    <label>Preferred Country:</label>
+    <input list="countries" name="country">
+
+    <datalist id="countries">
+      <option value="USA">
+      <option value="UK">
+      <option value="India">
+      <option value="Japan">
+    </datalist>
+
+    <br><br>
+
+    <input type="checkbox" id="agree" name="agree">
+    <label for="agree">I agree to the Terms & Conditions</label>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Date & Time Information</legend>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob">
+    <br><br>
+
+    <label>Time:</label>
+    <input type="time" name="time">
+    <br><br>
+
+    <label>Month:</label>
+    <input type="month" name="month">
+    <br><br>
+
+    <label>Week:</label>
+    <input type="week" name="week">
+    <br><br>
+
+    <label>Date & Time:</label>
+    <input type="datetime-local" name="datetime">
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Form Controls</legend>
+
+    <button type="button" onclick="sub()">Click Me</button>
+
+    <input type="image"
+           src="marwadi.png"
+           alt="Register"
+           width="120"
+           height="120">
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+  </fieldset>
+
+</form>
+
+<script>
+function sub() {
+    alert("Button Clicked!");
+}
+</script>
+
+</body>
+</html>
+
+// 2. EMPLOYEE REGISTRATION FORM // 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Registration Form</title>
+</head>
+<body>
+
+<h1>Employee Registration Form</h1>
+
+<form action="welcome.html">
+
+  <fieldset>
+    <legend>Employee Information</legend>
+
+    <label>Employee ID:</label>
+    <input type="text" name="empid" required>
+    <br><br>
+
+    <label>Full Name:</label>
+    <input type="text" name="fullname" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email">
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password">
+    <br><br>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone">
+    <br><br>
+
+    <label>Age:</label>
+    <input type="number" name="age">
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Job Details</legend>
+
+    <label>Department:</label>
+    <select name="department">
+      <option>Human Resources</option>
+      <option>Finance</option>
+      <option>Information Technology</option>
+      <option>Marketing</option>
+      <option>Sales</option>
+    </select>
+    <br><br>
+
+    <label>Designation:</label>
+    <input type="text" name="designation">
+    <br><br>
+
+    <label>Date of Joining:</label>
+    <input type="date" name="joiningdate">
+    <br><br>
+
+    <label>Upload Resume:</label>
+    <input type="file" name="resume">
+    <br><br>
+
+    <label>Work Experience (Years):</label>
+    <input type="range" min="0" max="30" name="experience">
+    <br><br>
+
+    <label>Preferred Office Color:</label>
+    <input type="color" name="color">
+    <br><br>
+
+    <label>Personal Website:</label>
+    <input type="url" name="website">
+    <br><br>
+
+    <label>Office Location:</label>
+    <input list="locations" name="location">
+    <datalist id="locations">
+      <option value="New York">
+      <option value="London">
+      <option value="Mumbai">
+      <option value="Tokyo">
+    </datalist>
+    <br><br>
+
+    <label>
+      <input type="checkbox" name="terms">
+      I agree to the company policies.
+    </label>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Date & Time</legend>
+
+    <label>Interview Time:</label>
+    <input type="time" name="interviewtime">
+    <br><br>
+
+    <label>Joining Month:</label>
+    <input type="month" name="joiningmonth">
+    <br><br>
+
+    <label>Training Week:</label>
+    <input type="week" name="trainingweek">
+    <br><br>
+
+    <label>Date & Time:</label>
+    <input type="datetime-local" name="datetime">
+    <br><br>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Form Controls</legend>
+
+    <button type="button" onclick="showMessage()">Click Me</button>
+
+    <input type="image"
+           src="marwadi.png"
+           alt="Register"
+           width="120"
+           height="120">
+    <br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+
+  </fieldset>
+
+</form>
+
+<script>
+function showMessage() {
+    alert("Employee Registration Form");
+}
+</script>
+
+</body>
+</html>
