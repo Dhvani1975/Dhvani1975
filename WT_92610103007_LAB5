@@ -1,0 +1,135 @@
+Code Snippet:
+Source file: portfolio.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+body { font-family: Arial; margin: 0;
+background: linear-gradient(to right, #0a1f44, #1a3c6e); color: white;
+}
+header { background-color: rgb(26, 26, 79); color: rgb(236, 245, 143); text-align: center; padding: 25px;
+box-shadow: 0 4px 10px black;
+}
+nav {
+background-color: #001f5b;
+padding: 12px; text-align: center;
+}
+nav a {
+color:rgb(236, 245, 143); margin: 10px; text-
+
+decoration: none; padding: 10px; border-radius: 5px;
+}
+nav a:hover { background-color:rgb(236, 245, 143);
+color: darkblue;
+}
+section { background: white; color: black; margin: 20px; padding: 20px; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+ul li {
+padding: 5px;
+}
+table { width: 100%; border-collapse: collapse;
+}
+th { background-color: darkblue;
+color:rgb(226, 245, 143);
+}
+th, td { padding: 10px; text-align: center;
+border: 1px solid black;
+}
+
+input { padding: 8px; margin: 5px; border-radius: 5px;
+}
+input[type="submit"] { background-color: darkblue; color: rgb(236, 245, 143); border: none; cursor: pointer;
+}
+input[type="submit"]:hover { background-color:rgb(93, 95, 92);
+color: darkblue;
+}
+footer { background-color: #001f5b; color: rgb(236, 245, 143); text-align: center; padding: 10px;
+}
+@media (max-width: 768px) {
+nav { display: flex; flex-direction: column;
+}
+nav a { display: block; margin: 5px 0;
+}
+section { margin: 10px; padding: 15px;
+}
+
+table { font-size: 12px;
+}
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Dhvani Portfolio</h1>
+<p>Computer Engineering Student</p>
+</header>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+<section id="about">
+<h2>About Me</h2>
+<p>Hello! I am a passionate Computer Engineering student. I love designing websites and learning new technologies.</p>
+<p>My goal is to become a full-stack developer.</p>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<ul>
+<li>Project Management</li>
+<li>Java Programming</li> <li>Database (MySQL)</li>
+<li>HTML & CSS</li>
+</ul>
+</section>
+<section id="education">
+<h2>Education</h2>
+<table>
+<tr>
+<th>Year</th>
+<th>Course</th>
+<th>Institute</th>
+</tr>
+<tr>
+<td>2026 - 2029</td>
+<td>B.TECH Computer Engineering</td>
+<td>Marwadi University</td>
+</tr>
+<tr>
+<td>2023 - 2026</td>
+<td>Diploma Computer Engineering</td>
+<td>GUJRAT TECHNOLOGY UNIVERSITY</td>
+</tr>
+</table>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<ul>
+<li>Student Management System (Java + DBMS)</li>
+<li>Login & Profile Servlet Project</li>
+<li>College Website using HTML & CSS</li>
+</ul>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<form>
+<label>Name:</label><br>
+<input type="text" required><br>
+<label>Email:</label><br>
+<input type="email" required><br>
+<label>Message:</label><br>
+<input type="text"><br><br>
+<input type="submit" value="Send Message">
+</form>
+</section>
+<footer>
+<p>© 2026 Jhil | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+Github reference link:
+https://github.com/Dhvani1975/Dhvani1975
