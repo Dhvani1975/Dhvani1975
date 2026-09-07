@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+<style></style>
+</head>
+<body>
+<header>
+<h1>Marwadi university</h1>
+<h2>Department of computer engineering</h2>
+</header>
+<nav>
+<a href="#VISION">vision</a>
+<a href="#MISSION">mission</a>
+<a href="#PROGRAM-SPECIFIC-OUTCOMES">program-specific-outcomes</a>
+<a href="#COURES-OFFERED">course-offered</a>
+<a href="#TOP-RECRUITERS">top-recruiters</a>
+</nav>
+<main>
+<section id="VISION">
+<h2>Vision</h2>
+<p>To impart quality technical education through research, innovation, and teamwork for creating professionally superior and ethically strong manpower that meets the global
+challenges of engineering industries and research organizations.</p>
+</section>
+<section id="MISSION">
+<h2>Mission</h2>
+<ul>
+<li>Maintain state-of-the-art ICT enabled teaching and learning methodologies.</li>
+<li>Enable graduates to become digital age literates, innovators, and professionals.</li>
+<li>Provide skills, knowledge, and attitudes for success as engineers, leaders, and entrepreneurs.</li>
+<li>graduates for lifelong learning and career challenges.</li> </ul>
+</section>
+<section ID="PROGRAM-SPECIFIC-OUTCOMES">
+<h2>Program-Specific-Outcomes</h2>
+<ol>
+<li>Apply knowledge and competence in the design and development of computer-based systems addressing industrial and social needs.</li>
+<li>Adapt to emerging technological advancements including cybersecurity, AR/VR, and IoT.
+</li>
+</ol>
+</section>
+<section id="COURES-OFFERED">
+<H2>course-offered</H2>
+<ul>
+<li>B.Tech in Computer Engineering</li>
+<li>B.Tech in Cyber Security</li>
+<li>M.Tech in Computer Engineering</li>
+<li>Ph.D. in Computer Science & Engineering</li> </ul>
+</section>
+<section id="TOP-RECRUITERS">
+<h2>top-recruiters</h2>
+<ul>
+<li>TCS</li>
+<li>Infosys</li>
+<li>Capgemini</li>
+<li>Wipro</li>
+<li>LTIMindtree</li>
+<li>Cognizant</li>
+<li>Reliance Industries</li>
+</ul>
+</section>
+</main>
+<footer>
+<p> &copy; 2025 Marwadi University-Departent CE</p>
+</footer>
+</body>
+</html>
+Source File: style.css
+body{
+background-color: rgb(242, 236, 236); margin: 0px;
+}
+header{
+background-color: rgb(228, 232, 166); color: rgb(23, 21, 1); text-align: center;
+padding: 10px;
+}
+nav{
+background-color: rgb(26, 91, 114); padding: 20px; text-align: center; color: rgb(250, 248, 248); width: 100%; border-bottom: 2px solid black; display: block;
+}
+nav a{
+
+color: white; text-decoration: none; margin-left: 10px; background-color: rgb(96, 196, 214); padding: 10px;
+transition: background-color 0.3s ease;
+}
+nav a:hover { background-color: rgb(140, 210, 230);
+color: black;
+}
+section{
+background-color: rgb(86, 94, 133); margin: 20px; padding: 20px; border-radius: 10px; box-shadow: 2px 2px 3px rgb(39, 37, 37);
+}
+main {
+display: block; /* default vertical layout */
+}
+footer{
+background-color:rgb(228, 232, 166); color: rgb(23, 21, 1); padding: 20px;
+text-align: center;
+}
+Github Reference Link:
+https://github.com/Dhvani1975/Dhvani1975
