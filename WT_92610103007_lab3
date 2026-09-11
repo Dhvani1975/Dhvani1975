@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <div class="logo">Marwadi University-Rajkot</div>
+        <nav class="top-nav">
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">logic</a>
+        </nav>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <a href="#">🏠Home</a>
+            <a href="#">🎓Placement</a>
+            <a href="#">🏢Recruitment</a>
+            <a href="#">👩‍🏫Faculty</a>
+            <a href="#">📰News</a>
+        </aside>
+        <main class="content">
+            <h2>recent placement</h2>
+            <div class="cards">
+            <div class="card">
+                <img src="c:\Users\baras\OneDrive\Desktop\download.jpg" alt="profile">
+                <h3>Dhvani Barasara</h3>
+                <p>L&T PVT LTD</p>
+                <p>packege:₹4.5LPA</p>
+            </div>
+            <div class="card">
+                <img src="c:\Users\baras\Downloads\images 4" alt="profile">
+                <h3>Vishwa Barasara</h3>
+                <p>L&T PVT LTD</p>
+                <p>packege:₹4.8LPA</p>
+            </div>
+            <div class="card">
+                <img src="c:\Users\baras\Downloads\images 5" alt="profile">
+                <h3>Reyansh Barasara</h3>
+                <p>L&T PVT LTD</p>
+                <p>packege:₹5.5LPA</p>
+            </div>
+            </div>
+        </main>
+    </div>
+    <footer>@ &copy; 2025 marwadi university - rajkot</footer>
+</body>
+</html>
+
+
+
+
+###style.css 
+
+body
+{
+    background-color: rgb(227, 220, 220);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header
+{
+display: flex;
+background-color: rgb(220, 202, 148);
+justify-content: space-between;
+padding: 20px;
+}
+.logo{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.top-nav a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(97, 75, 102);
+    padding: 10px;
+}
+.top-nav a:hover
+{
+    background-color: rgb(9, 33, 43);
+    text-decoration: underline;
+}
+.container
+{
+    display: flex;
+}
+.sidebar{
+    background-color: rgba(34, 43, 167, 0.245);
+    height: calc(100vh-50px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.sidebar a{
+    background-color: rgba(6, 162, 228, 0.488);
+    text-decoration: none;
+    padding: 5px;
+    margin: 4px;
+    align-items: center;
+
+}
+.sidebar a:hover
+{
+    background-color:  rgb(77, 101, 112);
+    text-decoration: underline;
+}
+footer{
+    background-color: rgb(56, 47, 186);
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+.content
+{
+flex-grow: 1;
+padding: 30px;
+}
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card
+{
+    background-color: rgb(116, 116, 165);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgb(216, 211, 213);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    border-radius: 50%;
+}
